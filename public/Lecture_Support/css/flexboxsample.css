@@ -1,0 +1,99 @@
+/*
+     Reference: https://www.youtube.com/watch?v=JJSoEo8JSnc
+*/
+@media(min-width:768px){ /* Helps with mobile....*/
+    /*
+        The below were originally outside this @media at the beginning of the tutorial.
+    */
+    .container-1{
+        display:flex; /* This makes it a flexbox layout */
+        /*align-items: flex-start;
+        align-items: flex-end;
+        align-items: center;
+        flex-stretch is default
+        flex-direction:columns; row is the default 
+        justify-content: ;  controls content along the main axis (horizontal or vertical) 
+             values: flex-start*, flex-end, center, space-between, space-around, space-evenly
+             see: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+        */
+    }
+    
+    .container-2{
+        display:flex;/* This makes it a flexbox layout */
+        justify-content: space-between;
+        /*justify-content: flex-start;
+        justify-content: space-around;
+        justify-content: flex-end;
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: center;
+        align-self: 
+        flex-stretch is default
+        flex-direction:columns;
+        */
+    }
+}
+
+/* Medium screens */
+@media all and (max-width: 767px) {
+    .container-1 {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: space-around;
+    }
+  }
+  
+  /* Small screens */
+  @media all and (max-width: 500px) {
+    .container-1 {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+
+.container-3{
+    display:flex; /* This makes it a flexbox layout */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container-1 div, .container-2 div, .container-3 div{
+    border:1px #ccc solid;
+    padding:10px;
+}
+
+.box-1{
+    flex:2; /* grow and shrink with the container 
+                flex property is short for flex-grow, flex-shrink, flex-basis default:1 1 0*/
+    /*
+        flex-grow 1
+        flex-shring 1
+        flex-basis 0
+        - or - 
+        flex 1 1 0;
+    */
+    order:2;
+}
+
+.box-2{
+    flex:1;/* row and shrink with the container 
+         flex property is short for flex-grow, flex-shrink, flex-basis */
+        /* try commenting out the 'flex' and use this instead */
+        /* width : 33.3333%; we would have to change this number if we added more to the nav bar...so use 'flex' */
+    order:1;
+}
+
+.box-3{
+    flex:1;/* grow and shrink with the container 
+    flex property is short for flex-grow, flex-shrink, flex-basis */
+    order:3;
+}
+
+.container-2-box{
+    flex-basis:30%; /* like width just more of the flexbox way of doing it */
+
+}
+
+.container-3-box{
+    flex-basis:12%; /* like width just more of the flexbox way of doing it */
+
+}
