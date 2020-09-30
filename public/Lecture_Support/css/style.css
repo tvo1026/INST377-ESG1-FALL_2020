@@ -1,4 +1,8 @@
 
+  h1 {
+    color: blue;
+    font-size: 30px;
+  }
   p { /* This is what is called an element selector 
     It targets one type of html tag an applies these rules to all of them
     */
@@ -6,10 +10,7 @@
     font-size: 20px;
   }
 
-  h1 {
-    color: blue;
-    font-size: 30px;
-  }
+  
 
   #first-id-headline { /* Id selector */
     color: purple;
@@ -26,7 +27,7 @@
     background: red;
   }
   * { /* Universal selector */
-    font-size: 20px;
+    font-size: 50px;
   }
 
 /* Pseudoclasses - Any button over which the user's pointer is hovering */
