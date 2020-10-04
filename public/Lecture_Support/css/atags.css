@@ -1,0 +1,47 @@
+a {
+    color: hotpink;
+  }
+
+  /* unvisited link */
+a:link {
+    color: red;
+    text-decoration: none;
+    background-color: yellow;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+    text-decoration: none;
+    background-color: cyan;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+    text-decoration: underline;
+    background-color: lightgreen;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    text-decoration: underline;
+    background-color: hotpink;
+  }
+
+  /* More advanced
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+  */

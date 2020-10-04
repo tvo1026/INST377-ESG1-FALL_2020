@@ -9,8 +9,7 @@
         display:flex; /* This makes it a flexbox layout */
         /*align-items: flex-start;
         align-items: flex-end;
-        align-items: center;
-        flex-stretch is default
+        align-items: center; flex-stretch is default
         flex-direction:columns; row is the default 
         justify-content: ;  controls content along the main axis (horizontal or vertical) 
              values: flex-start*, flex-end, center, space-between, space-around, space-evenly
@@ -28,7 +27,6 @@
         align-items: flex-start;
         align-items: flex-end;
         align-items: center;
-        align-self: 
         flex-stretch is default
         flex-direction:columns;
         */
