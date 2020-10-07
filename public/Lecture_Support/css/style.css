@@ -1,0 +1,37 @@
+
+  h1 {
+    color: blue;
+    font-size: 30px;
+  }
+  p { /* This is what is called an element selector 
+    It targets one type of html tag an applies these rules to all of them
+    */
+    color: red;
+    font-size: 20px;
+  }
+
+  
+
+  #first-id-headline { /* Id selector */
+    color: purple;
+    font-size: 30px;
+  }
+  .first-class-selector { /* Class selector */
+    color: green;
+  }
+  .second-class-selector { /* Can add multiple classes to an element */ 
+    font-family: cursive;
+  }
+
+  input[type=number] { /* Attribute selector */
+    background: red;
+  }
+  * { /* Universal selector */
+    font-size: 50px;
+  }
+
+/* Pseudoclasses - Any button over which the user's pointer is hovering */
+button:hover {
+    color: blue;
+  }
+ 
