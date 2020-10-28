@@ -1,4 +1,4 @@
-// Promise
+// Promise FetchAPI
 // const fetchPromise = fetch("https://api.umd.io/v0/bus/routes/115/locations");
 // Target main element
 const main = document.getElementById("main");
