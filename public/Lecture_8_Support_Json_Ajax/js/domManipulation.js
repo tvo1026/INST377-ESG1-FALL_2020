@@ -5,4 +5,4 @@ const link = document.querySelector('a');
 //    that matches the selector,  and stores references to them in an array-like object called a NodeList.
 
 link.textContent = 'Mozilla Developer Network 2';
-// link.href = 'https://developer.mozilla.org';
+link.href = 'https://developer.mozilla.org';
